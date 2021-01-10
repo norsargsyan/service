@@ -4,7 +4,7 @@ $('.yearpicker').yearpicker({
           endYear: 2020
         });
 $(function(){
-	let eWidth = $('#profile-widget').width();
-	alert(eWidth)
-	$("#profile-widget__popup-inner").css("width", eWidth + 'px');
-})
+	$('#profile-widget__inner').click(function(){
+		$('#profile-widget__popup-inner').slideToggle( "200" );
+	})
+});

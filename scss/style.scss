@@ -35,6 +35,7 @@ header, footer{
 ul{
 	list-style-type: none;
 }
+$mColor: #9729EB;
 ::selection {background: #D2BFE3;}
 ::-moz-selection {background: #D2BFE3;}
 ::-webkit-selection {background: #D2BFE3;}
@@ -476,6 +477,14 @@ a{
 .profile-widget__popup-inner{
 	position: absolute;
 	border-radius: 0 0 7px 7px;
+	left: 0;
+	right: 0;
+	display: none;
+	&>ul{
+		padding-bottom: 6px;
+		background: #fff;
+		border-radius: 0 0 7px 7px;
+	}
 }
 
 .comapny-mentor{
@@ -489,11 +498,9 @@ a{
 	background: url('../img/arrow-down.svg') no-repeat right 30.5px center;
 	cursor: pointer;
 	position: relative;
+	border-radius: 7px 7px 0 0;
 }
 
-.profile-widget__inner, .profile-widget__popup-inner{
-	background: #fff;
-}
 .profile-icon{
 	vertical-align: middle;
 }
@@ -1017,10 +1024,16 @@ a{
 	font-size: 14px;
 	line-height: 20px;
 	color: #252427;
+	transition: .2s ease;
+	&:hover{
+		color: $mColor;
+		transition: .2s ease;
+	}
 }
 .profile-widget{
 	position: relative;
 	bottom: 0;
+	background: #fff;
 }
 .list-lines{
 	position: relative;
