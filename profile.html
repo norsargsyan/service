@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ЛК автоматизация сетевого бизнеса</title>
+  <link rel="stylesheet" href="css/style.min.css?v=5">
+  <link rel="stylesheet" href="css/yearpicker.css">
+</head>
+<body>
+	<div class="wrapper-profile">
+		<header class="header-profil">
+			<div class="header-profil__inner">
+				<div class="header-profil__my-info">
+					<div class="profile-widget" id="profile-widget">
+						<div class="profile-widget__inner">
+							<div class="profile-widget__inner-image"><img src="img/profileimage.png" class="profile-image" alt="profile image"></div>
+							<div class="profile-widget__inner-info">
+								<div class="profile-widget__inner-info-top">Иван Иванов</div>
+								<div class="profile-widget__inner-info-bottom">
+									<span class="profile-status active-status">Активен</span>
+								</div>
+							</div>
+
+						</div>
+						<div class="profile-widget__popup">
+							<div class="profile-widget__popup-inner" id="profile-widget__popup-inner">
+								<ul>
+									<li class="profile-widget__popup-list list-lines"><a href="#" class="profile-widget__popup-link">Реферальные ссылки</a></li>
+									<li class="profile-widget__popup-list"><a href="#" class="profile-widget__popup-link">Профиль</a></li>
+									<li class="profile-widget__popup-list"><a href="#" class="profile-widget__popup-link">Чаты</a></li>
+									<li class="profile-widget__popup-list"><a href="#" class="profile-widget__popup-link">Выйти</a></li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+					<div class="comapny-mentor">
+						<div class="comapny-status">
+							<div class="comapany-info">Ваша компания:</div>
+							<div class="comapany-name">ООО строй-инвест <span class="down-arrow-icon"></span></div>
+						</div>
+						<div class="mentor-status">
+							<div class="comapany-info">Ваш наставник:</div>
+							<div class="comapany-name">Петров Петр Петрович <span class="down-arrow-icon"></span></div>
+						</div>
+					</div>
+				</div>
+				<div class="header-profil__setting-icon"><a href="#"><img src="img/settings.svg" alt="setting icon"></a></div>
+			</div>
+		</header>
+		<main class="profile-main">
+			<aside class="main-aside">
+				<div class="aside-menu-arrow-left"></div>
+				<ul class="main-aside-menu">
+					<li class="bottom-line"><a href="#" class="main-aside-menu__links">Предложение</a></li>
+					<li><a href="#" class="main-aside-menu__links">Бизнес</a></li>
+					<li><a href="#" class="main-aside-menu__links">Целевая аудитория</a><span class="count-circle">15</span></li>
+					<li><a href="#" class="main-aside-menu__links">Презентации</a></li>
+					<li><a href="#" class="main-aside-menu__links">Личные страницы</a></li>
+					<li class="bottom-line"><a href="#" class="main-aside-menu__links">Чат-боты</a></li>
+					<li><a href="#" class="main-aside-menu__links">Финансы</a></li>
+					<li><a href="#" class="main-aside-menu__links">Рефералы</a></li>
+					<li class="bottom-line"><a href="#" class="main-aside-menu__links dropdown-arrow">Статистика</a></li>
+					<li><a href="#" class="main-aside-menu__links">Обучение</a></li>
+					<li><a href="#" class="main-aside-menu__links">Помощь</a></li>
+				</ul>
+			</aside>
+			<section class="profile-input-group">
+				<form action="#" method="POST">
+					<div class="profile-title">
+						<h1 class="profile-h1">Профиль</h1>
+						<div class="submit-elem">
+							<input type="submit" value="Сохранить" class="button-fill">
+						</div>
+					</div>
+					<div class="account-section">
+						<div class="account-input">
+							<h2 class="profile-h2">Аккаунт</h2>
+							<div class="input-group">
+								<input type="text" class="input-text" placeholder="test@mail" disabled>
+								<div class="prompt-link"><a href="#" class="link">Подтвердить почту</a></div>
+							</div>
+							<div class="input-group">
+								<input type="password" class="input-text" placeholder="Новый пароль">
+								<input type="password" class="input-text" placeholder="Повторите пароль">
+							</div>
+						</div>
+						<div class="account-image">
+							<div class="account-image-elem"><img src="img/profile-image.png" alt="Account image"></div>
+							<div class="account-image-input">
+								<label><input type="file" class="profile-upload-file"></label>Загрузить фото
+							</div>
+
+						</div>
+					</div>
+					<div class="personal-info">
+						<h2 class="profile-h2">Личная информация</h2>
+						<div class="input-group eye-group">
+							<div class="input-eye"><input type="text" class="input-text" value="Иван"><div class="eye"></div></div>
+							<div class="input-eye"><input type="text" class="input-text" value="Иванов"><div class="eye-close"></div></div>
+						</div>
+						<div class="input-group eye-group">
+							<div class="input-eye"><input type="text" class="input-text" placeholder="Отчество"><div class="eye"></div></div>
+							<div class="input-eye d_relative"><input type="text" class="input-text yearpicker"  placeholder="Дата рождения" name="brands"/><div class="eye-close"></div></div>
+						</div>
+						<div class="input-group eye-group">
+							<div class="input-eye"><input type="text" class="input-text" placeholder="Город"><div class="eye-close"></div></div>
+							<div class="input-eye"><input type="text" class="input-text" placeholder="Страна"><div class="eye"></div></div>	
+						</div>
+						<div class="input-group eye-group">
+							<div class="input-eye"><input type="text" class="input-text" placeholder="Город"><div class="eye-close"></div></div>
+							<div class="input-eye"><input type="text" class="input-text" placeholder="Страна"><div class="eye"></div></div>
+						</div>	
+					</div>
+					<div class="contact-info">
+
+						<div class="telephone-info">
+						<h2 class="profile-h2">Контактная информация</h2>
+							<div class="input-group eye-group">
+								<div class="input-eye"><input type="text" class="input-text" placeholder="Телефон"><div class="eye-close"></div></div>
+								<div class="input-eye"><input type="text" class="input-text" placeholder="Запасной e-mail"><div class="eye"></div></div>
+							</div>
+						</div>
+						<div class="messanger-info">
+							<h3 class="profile-h3">Месенджеры</h3>
+							<div class="input-group eye-group">
+								<div class="input-eye"><input type="text" class="input-text input-text-icon t-icon" placeholder="Личный канал телеграм"><div class="eye"></div></div>
+								<div class="input-eye"><input type="text" class="input-text input-text-icon t-icon" placeholder="Телеграм"><div class="eye"></div></div>
+							</div>
+							<div class="input-group eye-group">
+								<div class="input-eye"><input type="text" class="input-text input-text-icon wats-icon" placeholder="Вотсап"><div class="eye"></div></div>
+								<div class="input-eye"><input type="text" class="input-text input-text-icon vi-icon" placeholder="Вайбер"><div class="eye"></div></div>
+							</div>
+							<div class="input-group eye-group">
+								<div class="input-eye"><input type="text" class="input-text input-text-icon wi-icon" placeholder="ВиЧат"><div class="eye"></div></div>
+								<div class="input-eye"><input type="text" class="input-text input-text-icon sky-icon" placeholder="Скайп"><div class="eye"></div></div>
+							</div>
+						</div>
+						</div>
+						<div class="social-networks-info">
+							<h3 class="profile-h3">Соц.сети</h3>
+							<div class="input-group eye-group">
+								<div class="input-eye"><input type="text" class="input-text input-text-icon vk-icon" placeholder="Вконтакте"><div class="eye-close"></div></div>
+								<div class="input-eye"><input type="text" class="input-text input-text-icon insta-icon" placeholder="Инстаграм"><div class="eye-close"></div></div>
+							</div>
+							<div class="input-group eye-group">
+								<div class="input-eye"><input type="text" class="input-text input-text-icon fb-icon" placeholder="Фейсбук"><div class="eye-close"></div></div>
+								<div class="input-eye"><input type="text" class="input-text input-text-icon twi-icon" placeholder="Твиттер"><div class="eye"></div></div>
+							</div>
+							<div class="input-group eye-group">
+								<div class="input-eye"><input type="text" class="input-text input-text-icon you-icon" placeholder="Ютуб"><div class="eye"></div></div>
+								<div class="input-eye"><input type="text" class="input-text input-text-icon ok-icon" placeholder="Однокласники"><div class="eye-close"></div></div>
+							</div>
+							<div class="input-group eye-group">
+								<div class="input-eye"><input type="text" class="input-text input-text-icon tik-icon" placeholder="ТикТок"><div class="eye"></div></div>
+								<div class="input-eye"><input type="text" class="input-text input-text-icon pin-icon" placeholder="Пинтерест"><div class="eye"></div></div>
+							</div>
+							<div class="get-center get-bottom">
+								<div class="submit-elem">
+									<input type="submit" value="Сохранить" class="button-fill">
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</section>
+		</main>
+	</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/yearpicker.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
