@@ -45,6 +45,9 @@ $mColor: #9729EB;
 .auth-main {
     background: url(../img/back1.svg) top left/460px no-repeat,url(../img/back2.svg) center right/600px no-repeat,url(../img/back3.svg) bottom left/550px no-repeat;
 }
+.profile{
+	background: url(../img/decoration-background.svg) no-repeat  left -300px top -231px;
+}
 .header-main{
 	max-width: 1440px;
 	width: 100%;
@@ -540,7 +543,6 @@ a{
 				url('../img/smartphone.svg') no-repeat right center;
 }
 .wrapper-profile{
-	background: linear-gradient(0deg, #FCFCFF, #FCFCFF);
 	padding-left: 50px;
 	padding-right: 50px;
 	min-height: 100vh;
@@ -548,6 +550,7 @@ a{
 	width: 100%;
 	margin: 0 auto;
 }
+
 .comapny-status .comapany-info{
 	background: url('../img/friends.svg') no-repeat 1px center;
 	padding-left: 25px;
@@ -1054,7 +1057,47 @@ a{
 .list-lines:after{
 	bottom: 0;
 }
+.footer-bottom{
+	text-align: center;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 20px;
+	color: #949398;
+}
+.d_weight600{
+	font-weight: 600;
+}
+.d_size14{
+	font-size: 14px;
+}
+.footer-top{
+	display: flex;
+	justify-content: space-between;
+}
+.footer-profile{
+	flex-direction: column;
+	background: #fff;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.footer-bottom, .footer-top{
+	width: 100%;
+}
+.footer-top__menu>ul, .footer-top__social>ul, .footer-top__logo>a{
+	display: flex;
+}
+.footer-top__menu, .footer-top__social, .footer-top__logo>a {
+	align-items: center;
+}
 //  Mobile adaptive
+@media (min-width: 1700px) {
+	.profile{
+		background-position: center top;
+		background-size: cover;
+	}
+}
 @media (max-width: 1120px) {
 	.auth-main{
 	background: url('../img/back1.svg') top left / 350px no-repeat,
